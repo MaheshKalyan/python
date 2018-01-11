@@ -1,0 +1,682 @@
+1)
+#Write a program to add , Subtract, Multiply, and divide 2 numbers
+num1=int(input("enter number1::"))
+num2=int(input("enter number2::"))
+print ("addition is:%d" %(num1+num2))
+print ("substraction is:%d" %(num1-num2))
+print ("multiplication is:%d" %(num1*num2))
+print ("division is:%d" %(num1/num2))
+
+output::
+C:\Users\Harika\Desktop>python 1.py
+enter number1::8
+enter number2::2
+addition is:10
+substraction is:6
+multiplication is:16
+division is:4
+
+================================================================================
+2)
+#greater in three numbers
+print("Enter the first Number")
+firstNumber = input()
+print("Enter the second Number")
+secondNumber = input()
+print("Enter the third Number")
+thirdNumber = input()
+if firstNumber > secondNumber:
+    if firstNumber > thirdNumber:
+        print("FirstNumber is greater")
+    else:
+        print("thirdNumber is great")
+        
+elif firstNumber < secondNumber:
+        if secondNumber > thirdNumber:
+           print("second Number is great")
+        else :
+            print("ThirdNumber is great")
+    
+OUTPUT :
+Enter the first Number
+3
+Enter the second Number
+6
+Enter the third Number
+9
+ThirdNumber is great
+
+
+============================================================================================================================
+3)
+#odd or even
+print("Enter the Number :")
+Number = int(input())
+if Number%2 == 0:
+   print ("Given Number is Even")
+else:
+        print("Given Number is odd")
+
+Output : 
+Enter the Number :
+26
+Given Number is Even
+
+
+============================================================================================================================
+4)
+#Prime Number
+print("Enter the Number")
+Number = int(input())
+if Number > 1:
+    for i in range(2,Number):
+        if Number%i == 0:
+            print("Given nuber is not a prime number")
+            break
+        else:
+            print("Given Number is a prime number")
+            break
+OUTPUT : 11
+Given Number is a prime number
+
+
+============================================================================================================================
+5)
+#Write a program to receive 5 command line arguments and print each argument separately.
+#a) From the above statement your program should receive arguments and print them each of them. 
+import sys
+position=1
+length=len(sys.argv)-1
+while(position<=length):
+	print("The argument at position %d is %s" %(position, sys.argv[position]))
+	position=position+1
+
+
+output:
+C:\Users\Harika\Desktop>python 2.py harika mounika mahesh kanna
+The argument at position 1 is harika
+The argument at position 2 is mounika
+The argument at position 3 is mahesh
+The argument at position 4 is kanna
+
+# b) Find the biggest of three numbers, where three numbers are passed as command line arguments.
+import sys
+if((sys.argv[0]>sys.argv[1]) and (sys.argv[0]>sys.argv[2])):
+	print("The biggest number is %s" %sys.argv[0])
+if((sys.argv[1]>sys.argv[0]) and (sys.argv[1]>sys.argv[2])):
+	print("The biggest number is %s" %sys.argv[1])
+if((sys.argv[2]>sys.argv[0]) and (sys.argv[2]>sys.argv[1])):
+	print("The biggest number is %s" %sys.argv[2])
+
+C:\Users\Harika\Desktop>python 2.py 4 6 2
+The biggest number is 6
+
+==============================================================================
+
+
+6)
+#Operations on Stings
+String1 = "Mahesh you are just awesome"
+String2 = 'Mahesh simpliy super\n'
+print("Given String1 is:")
+print(String1)
+print("Given String2is:")
+print(String2)
+print("Concatination of strings:")
+print(String1 + String2)
+print("Sliece of string2")
+print(String2[0:6])
+print("Sliece of string1")
+print(String1[5])
+print("repitition of string")
+print(String2*5)
+
+OUTPUT : 
+Given String1 is:
+Mahesh you are just awesome
+Given String2is:
+Mahesh simpliy super
+
+Concatination of strings:
+Mahesh you are just awesomeMahesh simpliy super
+
+Sliece of string2
+Mahesh
+Sliece of string1
+h
+repitition of string
+Mahesh simpliy super
+Mahesh simpliy super
+Mahesh simpliy super
+Mahesh simpliy super
+Mahesh simpliy super
+
+
+============================================================================================================================
+7)
+
+#List Opearations
+List1 = ["ai","bi","ci",'di','ei','fi','gi','hi','ii','ji']
+List2 = ['aj','bj','cj']
+print("Given List1 is :")
+print(List1)
+print("Slice of List1")
+print(List1[1:4])
+print("the repetition of List1 for four time")
+print(List1*4)
+print("Concatenation of given two list")
+print(List1 + List2)
+
+OUTPUT : 
+['ai', 'bi', 'ci', 'di', 'ei', 'fi', 'gi', 'hi', 'ii', 'ji']
+['bi', 'ci', 'di']
+['ai', 'bi', 'ci', 'di', 'ei', 'fi', 'gi', 'hi', 'ii', 'ji', 'ai', 'bi', 'ci', 'di', 'ei', 'fi', 'gi', 'hi', 'ii', 'ji', 'ai', 'bi', 'ci', 'di', 'ei', 'fi', 'gi', 'hi', 'ii', 'ji', 'ai', 'bi', 'ci', 'di', 'ei', 'fi', 'gi', 'hi', 'ii', 'ji']
+['ai', 'bi', 'ci', 'di', 'ei', 'fi', 'gi', 'hi', 'ii', 'ji', 'aj', 'bj', 'cj']
+
+
+============================================================================================================================
+8)
+#Tuple Operataions
+Tuple1 = ('1857','1902','1947','1956','2009')
+Tuple2 = ('buxur','plassey','independence','AP','Telangana')
+print("Given Tuple is")
+print(Tuple1)
+print("Slice of Tuple1")
+print(Tuple1[0:2])
+print("Repitition of Tuple1")
+print(Tuple1*4)
+print("Concatenation of given tuples are :")
+print(Tuple1 + Tuple2)
+
+OUTPUT :
+
+Given Tuple is
+('1857', '1902', '1947', '1956', '2009')
+Slice of Tuple1
+('1857', '1902')
+Repitition of Tuple1
+('1857', '1902', '1947', '1956', '2009', '1857', '1902', '1947', '1956', '2009', '1857', '1902', '1947', '1956', '2009', '1857', '1902', '1947', '1956', '2009')
+Concatenation of given tuples are :
+('1857', '1902', '1947', '1956', '2009', 'buxur', 'plassey', 'independence', 'AP', 'Telangana')
+
+============================================================================================================================
+
+9)
+#Complex Number operations
+print("Enter the first complex number")
+Number1 = complex(input())
+print("Enter the second complex number")
+Number2 = complex(input())
+addition = Number1+Number2
+substraction = (Number2 - Number1)
+Multiplication = (Number2 * Number1)
+division = Number1 / Number2
+print(Number1)
+print("Addition of two given comlex numbers : ")
+print(addition)
+print("Substarction of two given comlex numbers :")
+print(substraction)
+print("Division of given two complex numbers : ")
+print(division)
+print("Multiplication of two given comlex numbers : ")
+print(Multiplication)
+
+OUTPUT :
+
+Enter the first complex number
+ 1+2j
+Enter the second complex number
+ 2+4j
+(1+2j)
+Addition of two given comlex numbers : 
+(3+6j)
+Substarction of two given comlex numbers :
+(1+2j)
+Division of given two complex numbers : 
+(0.5+0j)
+Multiplication of two given comlex numbers : 
+(-6+8j)
+
+
+============================================================================================================================
+10)
+# Assignment operator
+a = 10
+b = 20
+c = a+b
+print("value of c = a+b is :")
+print(c)
+c -= a
+print("value of c-a is :")
+print(c)
+c *= b
+print("value of c*b is :")
+print(c)
+c/= a
+print("value of c/a is :")
+print(c)
+c %= a
+print("value of c%a is :")
+print(c)
+c //= b
+print("value of c//b is :")
+print(c)
+
+OUTPUT :
+value of c = a+b is :
+30
+value of c-a is :
+20
+value of c*b is :
+400
+value of c/a is :
+40.0
+value of c%a is :
+0.0
+value of c//b is :
+0.0
+
+============================================================================================================================
+11)
+#Bitwise operators
+a = 60            
+b = 13          
+c = a & b      
+print "the Value of c = a&b is ", c
+c = a | b     
+print "the Value of c = a|b is ", c
+c = a ^ b      
+print "the Value of c = a^b is ", c
+c = ~a         
+print "the Value of c = ~a is ", c
+c = a << 2    
+print "the Value of c = a<<2 is ", c
+c = a >> 2       
+print "the Value of c = a>>2 is ", c
+
+OUTPUT :
+the Value of c = a&b is  12
+the Value of c = a|b is  61
+the Value of c = a^b is  49
+the Value of c = ~a is  -61
+the Value of c = a<<2 is  240
+the Value of c = a>>2 is  15
+
+============================================================================================================================
+12)
+#comparison operators
+sum = 0
+countgrt = 0
+counteql = 0
+countlst = 0
+NumberList = []
+print("Enter the value")
+for i in range (0,10):
+
+    NumberList.append(int(input()))
+
+for number in NumberList:
+    sum = sum + number
+
+average = float(sum/10)
+print(average)
+for number in NumberList:
+     if number < average:
+        print("No lessthan average")
+        print(number)
+        countlst = countlst+1
+
+     if number >= average:
+        print("No.equal to average")
+        print (number)
+        countgrt=countgrt+1
+     if number == average:
+        print("No. greater than average")
+        print(number)
+        counteql=counteql+1
+print("No of numbers lessthan average :")
+print(countlst)
+print("No of numbers equal to average :")
+print(counteql)
+print("No of numbers greaterthan average :")
+print(countgrt)
+      
+OUTPUT :
+Enter the value
+10
+20
+30
+40
+50
+80
+70
+90
+510
+210
+111.0
+No lessthan average
+10
+No lessthan average
+20
+No lessthan average
+30
+No lessthan average
+40
+No lessthan average
+50
+No lessthan average
+80
+No lessthan average
+70
+No lessthan average
+90
+No.equal to average
+510
+No.equal to average
+210
+No of numbers lessthan average :
+8
+No of numbers equal to average :
+0
+No of numbers greaterthan average :
+2
+
+============================================================================================================================
+
+
+13)# Decision making (IF .. Else structure)
+
+print("Enter the value of A :")
+A =int(input())
+print("Enter the value of B :")
+B=int(input())
+print("Enter the value of C :")
+C=int(input())
+print("Enter the value of D :")
+D=int(input())
+if(A>B): 
+        
+     if(A>C):
+             
+          if(A>D): 
+                  
+            print("A is bigger")
+                
+     else: 
+            print("D is bigger")
+                 
+             
+elif(B>C): 
+                   
+     if(B>D): 
+                            
+          print("b is bigger")
+                           
+     else: 
+                          
+          print("d is bigger"); 
+                             
+                       
+elif(C>D):
+                      
+          print("c is bigger")
+                       
+else: 
+               
+         print("d is bigger")
+               
+                  
+OUTPUT :
+
+Enter the value of A :
+ 7
+Enter the value of B :
+ 8
+Enter the value of C :
+ 9
+Enter the value of D :
+ 4
+c is big
+
+============================================================================================================================
+14)
+Python List functions and Methods:
+
+#Python List functions and Methods
+Employeeid = ['a0','a1','a2','a3','a4','a5','a6','a7','a8','a9']
+Employeename = ["mahesh","harika","kittu","prashanth","tillu","mounika","raj","nag","chir","mou"]
+def Employee():
+    
+    for name in range(0,10):
+        print (Employeeid[0:10],Employeename[0:10])   
+        break
+    
+    indel = int(input())
+    print (Employeeid[indel],Employeename[indel])
+        
+    print(Employeename[4:9])
+    print(Employeename[3:])
+print("enter the number of times you want to repeat the list")
+repeat=int(input())
+print((Employeeid)*repeat,(Employeename)*repeat)
+print(Employeeid+Employeename) 
+for i in range(0,10):
+  print(Employeeid[i],Employeename[i])
+Employee()
+
+
+==========
+output::::
+enter the number of times you want to repeat the list
+ 2
+(['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9', 'a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9'], ['mahesh', 'harika', 'kittu', 'prashanth', 'tillu', 'mounika', 'raj', 'nag', 'chir', 'mou', 'mahesh', 'harika', 'kittu', 'prashanth', 'tillu', 'mounika', 'raj', 'nag', 'chir', 'mou'])
+['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9', 'mahesh', 'harika', 'kittu', 'prashanth', 'tillu', 'mounika', 'raj', 'nag', 'chir', 'mou']
+('a0', 'mahesh')
+('a1', 'harika')
+('a2', 'kittu')
+('a3', 'prashanth')
+('a4', 'tillu')
+('a5', 'mounika')
+('a6', 'raj')
+('a7', 'nag')
+('a8', 'chir')
+('a9', 'mou')
+(['a0', 'a1', 'a2', 'a3', 'a4', 'a5', 'a6', 'a7', 'a8', 'a9'], ['mahesh', 'harika', 'kittu', 'prashanth', 'tillu', 'mounika', 'raj', 'nag', 'chir', 'mou'])
+
+
+============================================================================================================================
+
+15) Python List functions and Methods
+
+Employeeid = [0,1,2,3]
+print("enter the input::")
+user=int(input())
+user1=int(input())
+if user in Employeeid:
+  print("true")
+else:
+  print("false")
+  
+for i in  range (0,4):
+  if(i==user1):
+    print("input is exist")
+    break
+  else:
+    print("It's not exist")
+    break
+
+for i in Employeeid:
+  print Employeeid[::-1]
+  break
+
+                                      ========= O/P =========
+output::
+
+enter the input::
+ 8
+ 9
+false
+It's not exist
+[3, 2, 1, 0]
+ 
+===========================================================================================================================
+20)
+#Looping structures - fibonacci series
+number1=0
+number2=1
+terms=int(input())
+count=0
+
+
+while(count<terms):
+  print number1
+  sum=number1+number2
+  number1=number2
+  number2=sum
+  
+  
+  count=count+1
+
+                                    =================O/P=========================
+output:
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
+===========================================================================================================================
+17)
+#Write program to find  the biggest  and Smallest of N numbers.
+#PS: Use the functions to find biggest and  smallest numbers. 
+
+i =0;n=0;lar=0;sm=0;elem=0
+print ("Enter total number of elements \n");
+elem = int(input())
+print ("Enter first number \n");
+n = int(input())
+lar = n;
+sm=n;
+for i in range (1,elem):
+    print ("\n Enter another number \n");
+    n=int(input())
+    if (n>lar):
+        lar=n;
+    if (n<sm):
+        sm=n;
+    
+print("\n The largest number is %d", lar);
+print ("\n The smallest number is %d", sm);
+                                             ==============O/P======================
+
+OUTPUT :
+
+Enter total number of elements 
+
+ 5
+Enter first number 
+
+ 1
+
+ Enter another number 
+
+ 2
+
+ Enter another number 
+
+ 3
+
+ Enter another number 
+
+ 4
+
+ Enter another number 
+
+ 5
+('\n The largest number is %d', 5)
+('\n The smallest number is %d', 1)
+
+============================================================================================================================
+18)
+Using loop structures print numbers from 1 to 100.  and using the same loop print numbers from 100 to 1.( reverse printing)
+     a) By using For loop 
+     b) By using while loop
+    c) Let    mystring ="Hello world"
+             print each character of  mystring in to separate line using appropriate  loop structure.
+
+
+#using for loops
+for i in range(0,101):
+     print(i)
+a=100
+for i in range(0,100):
+  print(a)
+  a=a-1
+#using while loops
+j=100
+while j>=0:
+      print(j)
+      j=j-1
+j=0
+while j<=100:
+     print(j)
+     j=j+1
+
+mystring = "hello world"
+for i in (mystring):
+  print(i)
+
+                               ================O/P==========================
+
+Numbers will be printed as in question.
+
+h
+e
+l
+l
+o
+ 
+w
+o
+r
+l
+d
+============================================================================================================================
+19)
+Using loop structures print even numbers between 1 to 100.  
+     a) By using For loop , use continue/ break/ pass statement to skip  odd numbers.
+           i)  break the loop if the value is 50
+           ii) Use continue for the values 10,20,30,40,50
+
+     b) By using while loop, use continue/ break/ pass statement to skip odd numbers.
+
+
+
+for i in range (1,100):
+  if i%2==0:
+   if i in (10,20,30,40):
+     continue
+     print(i)
+   if i == 50:
+      break
+
+j=0
+while j<100:
+  if j%2 == 0:
+    print(j)
+  j=j+1
+  if j in (60,70,80):
+    continue
+  
+  if j==90:
+    break
+                      ===================O/P===================
+Numbers are printed as given input
+
+
+============================================================================================================================
