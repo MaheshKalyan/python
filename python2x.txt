@@ -1,0 +1,772 @@
+21)
+
+#Math and Random Modules
+import math
+import random
+list=[1,2,3,4]
+number1=int(input())
+number2=int(input())
+print round(number1)
+print math.sqrt(number1)
+print random.random()
+print random.uniform(10,500)
+print abs(number1)
+print math.ceil(number1)
+print cmp(number1,number2)
+print math.exp(number1)
+print math.fabs(number1)
+print math.log(number1)
+print max(number1,number2)
+print min(number1,number2)
+print math.floor(number1)
+print math.modf(number1)
+print math.pow(number1,number2)
+random.seed(number1)
+print random.random()
+print random.choice(list)
+print random.randrange(1,10,2)
+random.shuffle(list)
+print list
+
+-------------------
+output::
+
+5
+ 6
+5.0
+2.2360679775
+0.584637516189
+131.279977641
+5
+5.0
+-1
+148.413159103
+5.0
+1.60943791243
+6
+5
+5.0
+(0.0, 5.0)
+15625.0
+0.62290169489
+3
+7
+[1, 2, 3, 4]
+=========================================
+22)
+
+#Math- Trigonometric functions
+import math
+number1=int(input())
+number2=int(input())
+
+print math.sin(number1)
+print math.cos(number1)
+print math.atan(number1)
+print math.atan2(number1,number2)
+print math.hypot(number1,number2)
+print math.degrees(number1)
+print math.radians(number1)
+print math.acos(number2)
+print math.asin(number2)
+----------
+output::::
+Python 2.7.10 (default, Jul 14 2015, 19:46:27)
+[GCC 4.8.2] on linux
+   
+ 4
+ 0.5
+-0.756802495308
+-0.653643620864
+1.32581766367
+1.57079632679
+4.0
+229.183118052
+0.0698131700798
+1.57079632679
+0.0
+===================================================
+23)
+
+#Math – math.pi application
+import math
+radius=float(input("enter the radius of a circle"))
+print  (math.pi)*(radius*radius)
+
+output:::
+enter the radius of a circle 5
+78.5398163397
+
+=================================================
+24)Special Characters:
+    
+print("This is \x61 \ngood example")
+print("This is\b \ngood example")
+print("This is \t \x61 good example")
+print("This is \v \x61 good example")
+print("This \r is  good example")
+print("This is \f good example")
+print("This is \a	 \x61 good example")
+print("This is\\ \x61 \ngood example")
+print("This \'is \x61 good example")
+print("This \"is \x61 good example")
+
+output:::
+This is a 
+good example
+This is 
+good example
+This is 	 a good example
+This is  a good example
+This 
+ is  good example
+This is  good example
+This is 	 a good example
+This is\ a 
+good example
+This 'is a good example
+This "is a good example
+
+=====================================
+25)Write a program to print the different data types( Numbers, strings characters) using the Format symbols
+
+numb=1
+float1=7.5
+string1="sachin"
+print ("My name is %s and hight is %f kg!" % (string1, float1))
+
+output:::
+My name is sachin and hight is 7.500000 kg!
+======================================
+
+26)Receive the encoded string from your friend and decode it  to check the original  message.
+
+
+27)
+##Write a program to check given string is Palindrome or not.
+
+string1=input("enter the string to check whether it is polindrom::")
+for i in (string1):
+  string2=string1[::-1]
+if(string1==string2):
+  print ("It is polindrome")
+else:
+  print("It is not polindrome")
+
+output::
+
+enter the string to check whether it is polindrom:: harika
+It is not polindrome
+================================================
+28)
+#Write a program to check how many ovals present in the given string.
+count=0
+string1=input("enter the string to count the number of ovals in it::")
+for i in (string1):
+  if((i=="a") or (i=='e') or (i=="i") or (i=="o") or (i=="u")):
+    count=count+1
+print (count)
+---------------
+output::
+enter the string to count the number of ovals in it:: harika
+3
+======================================================
+
+29)
+#Apply all built in functions on Strings in your program
+string=input("enter a string::")
+sub="ar"
+string1=string.capitalize()
+print (string1)
+string2=string.center(30,"a")
+print (string2)
+string3=string.count(sub)
+print (string3)
+Str = "this is string example....wow!!!";
+Str1 = Str.encode("ascii", "ignore")
+print (Str1)
+Str2=Str1.decode("ascii","ignore")
+print (Str2)
+
+output:::
+
+enter a string:: harika
+Harika
+aaaaaaaaaaaaharikaaaaaaaaaaaaa
+1
+b'this is string example....wow!!!'
+this is string example....wow!!!
+
+---------------
+
+Str = "this is \tstring example....wow!!!";
+Str1 = Str.expandtabs(16)
+print (Str1)
+Str2=Str.endswith("is",2,4)
+print (Str2)
+Str3=Str.find("is",4)
+print (Str3)
+Str4=Str.index("is")
+print (Str4)
+Str5=Str.isalnum()
+print (Str5)
+
+output:::
+this is         string example....wow!!!
+True
+5
+2
+False
+
+-----------------
+
+Str = "this is string example....wow!!!";
+String= u"harika"
+Str1 = Str.isdigit()
+print (Str1)
+Str2=Str.islower()
+print (Str2)
+Str3=Str.isspace()
+print (Str3)
+Str4=String.isnumeric()
+print (Str4)
+Str5=Str.isalpha()
+print (Str5)
+
+output::
+False
+True
+False
+False
+False
+
+
+---------------------
+Str = "this is string example....wow!!!";
+sep=("-")
+Seq=("My","name","is","harika")
+Str1 = Str.istitle()
+print (Str1)
+Str2=Str.isupper()
+print (Str2)
+Str3=sep.join(Seq)
+print (Str3)
+Str4=len(Str)
+print (Str4)
+Str5=Str.ljust(40,"a")
+print (Str5)
+
+
+output::
+False
+False
+My-name-is-harika
+32
+this is string example....wow!!!aaaaaaaa
+   
+--------------------
+
+Str = b"  This is string example....wow!!!";
+string="harika"
+Str1 = Str.lower()
+print (Str1)
+Str2=Str.lstrip()
+print (Str2)
+intab=b"aeiou"
+outtab=b"12345"
+Str3=bytes.maketrans(intab,outtab)
+print (Str.translate(Str3))
+Str4=max(string)
+print (Str4)
+Str5=min(string)
+print (Str5)
+
+output::
+b'  this is string example....wow!!!'
+b'This is string example....wow!!!'
+b'  Th3s 3s str3ng 2x1mpl2....w4w!!!'
+r
+a
+   
+
+-----------------------
+Str ="This is string example....wow!!!";
+string="is"
+Str1 = Str.replace("is","are",2)
+print (Str1)
+Str2=Str.rfind(string,0,10)
+print (Str2)
+
+Str3=Str.rindex(string,0,10)
+print (Str3)
+Str4=Str.rjust(40,"a")
+print (Str4)
+Str5=Str.rstrip("!")
+print (Str5)
+
+output::
+  
+Thare are string example....wow!!!
+5
+5
+aaaaaaaaThis is string example....wow!!!
+This is string example....wow
+
+-----------------------
+
+Str ="This is string example....wow!!!";
+Strr="This\n is string\n example....wow!!!";
+string="This"
+Str1 = Str.split(' ',2)
+print (Str1)
+Str2=Strr.splitlines(0)
+print (Str2)
+Str3=Str.startswith(string)
+print (Str3)
+Str4=Str.strip("!")
+print (Str4)
+Str5=Str.swapcase()
+print (Str5)
+
+output::
+['This', 'is', 'string example....wow!!!']
+['This', ' is string', ' example....wow!!!']
+True
+This is string example....wow
+tHIS IS STRING EXAMPLE....WOW!!!
+
+------------------------
+
+Str = b"This is string example....wow!!!";
+Strr="This is string example....wow!!!";
+unic=u"harika1419"
+intab= b"aeiou"
+outtab= b"12345"
+remove= b'xm'
+Str1 =bytes.maketrans(intab,outtab)
+print (Str.translate(Str1,remove))
+Str2=Strr.title()
+print (Str2)
+Str3=Str.upper()
+print (Str3)
+Str4=Str.zfill(40)
+print (Str4)
+Str5=unic.isdecimal()
+print (Str5)
+
+output::
+b'Th3s 3s str3ng 21pl2....w4w!!!'
+This Is String Example....Wow!!!
+b'THIS IS STRING EXAMPLE....WOW!!!'
+b'00000000This is string example....wow!!!'
+False
+
+================================================
+30)
+
+#Write a program to Sort given N numbers 
+#selection sort
+
+List=[6,8,3,1,6]
+for i in range(len(List)):
+  min=i;
+  for j in range (i+1,len(List)):
+    if List[min]>List[j]:
+      min=j
+  List[i],List[min]=List[min],List[i]
+
+for i in range (len(List)):
+  print (List[i])
+
+Python 3.6.1 (default, Dec 2015, 13:05:11)
+[GCC 4.8.2] on linux
+
+output::::
+1
+3
+6
+6
+8
+=================================
+31)
+
+def binarysearch(List,l,h,x):
+  while(l<=h):
+    mid=int(l+(h-l)/2)
+    if(List[mid]==x):
+      return mid
+    elif(List[mid]<x):
+      l=mid+1
+    else:
+      h=mid-1
+  return -1
+
+
+List=[4,2,9,1,7]
+for i in range(len(List)):
+  min=i
+  for j in range (i+1,len(List)):
+    if List[i]>List[j]:
+      i=j
+  List[min],List[i]=List[i],List[min]
+for i in range(len(List)):
+  print (List[i])
+
+search=int(input("enter the element you want to search in the list:"))
+middle=int(len(List)/2)
+result=binarysearch(List,0,len(List)-1,search)
+print (result)
+
+output::
+1
+2
+4
+7
+9
+enter the element you want to search in the list: 10
+-1
+   
+=================================================
+32)
+#Write a program to perform following operations on List.
+List1=[1,2,3,4,5]
+List2=[7,4,3,2,6,5,2,1]
+List3=[9,5,3,0,1]
+#Find the length of each list and print it
+print ("length of list1 is:%d" %len(List1))
+print ("length of list1 is:%d" %len(List2))
+print ("length of list1 is:%d" %len(List3))
+#Find the maximum and  minimum element of each list
+print ("Max of list1 %d" %max(List1))
+print ("Max of list2 %d" %max(List2))
+print ("Max of list3 %d" %max(List3))
+print ("Min of list1 %d" %min(List1))
+print ("Min of list2 %d" %min(List2))
+print ("Min of list3 %d" %min(List3))
+#Compare each list and determine which list is biggest & which list is smallest.
+len1=len(List1)
+len2=len(List2)
+len3=len(List3)
+if((len1>len2)or (len1>len3)):
+  print("Biigest list is List1")
+elif((len2>len1)or (len2>len3)):
+  print("Biigest list is List2")
+else:
+  print("Biigest list is List3")
+#Delete first and last element of each list and print list contents.
+del(List1[0])
+del(List1[len1-2])
+del(List2[0])
+del(List2[len2-2])
+del(List3[0])
+del(List3[len3-2])
+print (List1)
+print (List2)
+print (List3)
+
+output::
+length of list1 is:5
+length of list1 is:8
+length of list1 is:5
+Max of list1 5
+Max of list2 7
+Max of list3 9
+Min of list1 1
+Min of list2 1
+Min of list3 0
+Biigest list is List2
+[2, 3, 4]
+[4, 3, 2, 6, 5, 2]
+[5, 3, 0]
+==========================================
+33)
+
+List=[10,20,30,40,50,60,70]
+#a) Append an object 80 to the List
+len1=len(List)
+List[len1-1]=80
+print (List)
+#insert object 100 at  4th position
+List[3]=100
+#Sort the list and print all elements
+for i in range(len(List)):
+  min=i;
+  for j in range (i+1,len(List)):
+    if List[min]>List[j]:
+      min=j
+  List[i],List[min]=List[min],List[i]
+
+for i in range (len(List)):
+  print (List[i])
+#d) Sort the elements of the list in descending order.
+print("In descending order::")
+for i in range (len(List)-1,0,-1):
+  print (List[i])
+#delete last three elements using pop operation
+List.pop(-3)
+List.pop(-2)
+List.pop(-1)
+print (List)
+
+output::
+[10, 20, 30, 40, 50, 60, 80]
+10
+20
+30
+50
+60
+80
+100
+In descending order::
+100
+80
+60
+50
+30
+20
+[10, 20, 30, 50]
+
+
+=================================
+34)
+List1=[1,2,3,4,5,0]
+List2=[7,4,3,2,6,5,2,1]
+List3=[9,5,3,0,1]
+#a) Create Maxlist by taking 2 maximum elements from each list.
+List1.sort()
+List2.sort()
+List3.sort()
+print (List1)
+List5=List1[len(List1)-1],List1[len(List1)-2],List2[len(List2)-1],List2[len(List2)-2],List3[len(List3)-1],List3[len(List3)-2]
+print (List5)
+
+#b) Find average value from all the elements of Maxlist.
+sum=0
+for i in range(len(List5)):
+  sum=sum+List5[i]
+avg=sum/len(List5)
+print (avg)
+#c) Create Minlist by taking 2 minimum elements from each list.
+List6=List1[0],List1[1],List2[0],List2[1],List3[0],List3[1]
+print (List6)
+
+#b) Find average value from all the elements of Maxlist.
+sum=0
+for i in range(len(List6)):
+  sum=sum+List6[i]
+avg_min=sum/len(List6)
+print (avg_min)
+
+output:
+[0, 1, 2, 3, 4, 5]
+(5, 4, 7, 6, 9, 5)
+6.0
+(0, 1, 1, 2, 0, 1)
+0.8333333333333334
+========================================================
+35)
+#Create a Tuple tup1 with days in a week & print the tuple elements
+tup1=("monday","tuesday","wednesday","thursday","friday","saturday")
+print (tup1)
+#Create a Tuple tup2  with months in a year and concatenate it with tup1
+tup2=("jan","feb","mar","apr","may","jun","jul","aug","sep","oct","nov","dec")
+print (tup1+tup2)
+#Create 3 tuples( tup1,tup2,tup3) with numbers and determine which is greater.
+tup1=(1,2,3,4)
+tup2=(5,2,1,8,9)
+tup3=(7,1,2,0,3,6)
+if(tup1>tup2):
+  if(tup1>tup3):
+    print ("tup1 is greater")
+if(tup2>tup1):
+  if(tup2>tup3):
+    print ("tup2 is greater")
+if(tup3>tup1):
+  if(tup3>tup2):
+    print ("tup3 is greater")
+#Try to delete an individual element in tup1 and try deleting complete Tuple -tup1
+#getting the error
+#Insert new element in to tuple by typecasting it to List
+List=list(tup1)
+print (List)
+List[2]=10
+print (List)
+
+output::
+('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday')
+('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec')
+tup3 is greater
+[1, 2, 3, 4]
+[1, 2, 10, 4]
+   
+
+=========================================
+36)
+
+#Create two tuples tup1 & tup2 and apply all built in functions on tuples.
+tup1=(1,2,3,4)
+tup2=(5,2,1,8,9)
+List=[4,7,3,2]
+print (len(tup1))
+print (max(tup1))
+print (min(tup1))
+tup3=tuple(List)
+print (tup3)
+
+output:::
+4
+4
+1
+(4, 7, 3, 2)
+
+=======================================================
+37)
+Create 3 dictionaries (dict1,dict2,dict3)  with 3 elements each.
+#Create 3 dictionaries (dict1,dict2,dict3)  with 3 elements each.
+dict1={"Name":"harika","age":"23","company":"wipro"}
+dict2={"Name":"Mahesh","age":"24","company":"wipro"}
+dict3={"Name":"Mounika","age":"25","company":"wipro"}
+#Add new elements in to the dictionaries dict1, dict2
+dict1["college"]="IIIT"
+print (dict1)
+#print the length of dict1,dict2,dict3.
+print (len(dict1))
+print (len(dict2))
+print (len(dict3))
+
+#Convert dict1, dict2, and dict3 dictionaries as string and concatenate all strings together.
+str1=str(dict1)
+str2=str(dict2)
+str3=str(dict3)
+print (str1+str2+str3)
+
+output:::
+
+{'Name': 'harika', 'age': '23', 'company': 'wipro', 'college': 'IIIT'}
+4
+3
+3
+{'Name': 'harika', 'age': '23', 'company': 'wipro', 'college': 'IIIT'}{'Name': 'Mahesh', 'age': '24', 'company': 'wipro'}{'Name': 'Mounika', 'age': '25', 'company': 'wipro'}
+
+
+=========================================================
+38)
+#Create 3 dictionaries (dict1,dict2,dict3)  with 3 elements each.
+dict1 ={'Name':'Ramakrishna','Age':25}
+dict2={'EmpId':1234,'Salary':5000}
+#a) Create single dictionary by merging dict1 and dict2
+dict1.update(dict2)
+print (dict1)
+#b) Update the salary to 10%
+dict1["Salary"]=500
+#c Update the age to 26
+dict1["age"]=26
+#Insert the new element with key "grade" and assign value as "B1"
+dict1["grade"]="B1"
+#Extract and print all values and keys separately.
+print (dict1.keys())
+print (dict1.values())
+#delete the element with key 'Age' and print dictionary elements.
+del dict1["Age"]
+print (dict1)
+
+output::::
+
+{'Name': 'Ramakrishna', 'Age': 25, 'EmpId': 1234, 'Salary': 5000}
+dict_keys(['Name', 'Age', 'EmpId', 'Salary', 'age', 'grade'])
+dict_values(['Ramakrishna', 25, 1234, 500, 26, 'B1'])
+{'Name': 'Ramakrishna', 'EmpId': 1234, 'Salary': 500, 'age': 26, 'grade': 'B1'}
+=====================================================
+39)
+
+Using Time and Calendar module ,Print current date and time. Print current month calendar.
+import time
+import calendar
+localtime = time.asctime( time.localtime(time.time()) )
+print (localtime)
+cal=calendar.month(2008,1)
+print (cal)
+
+
+output::
+Sun Jan  7 13:58:05 2018
+    January 2008
+Mo Tu We Th Fr Sa Su
+    1  2  3  4  5  6
+ 7  8  9 10 11 12 13
+14 15 16 17 18 19 20
+21 22 23 24 25 26 27
+28 29 30 31
+
+===================================================
+40)
+
+40)#Using time module perform following operations.
+#a) Print current time for every 5 seconds up to 1 minute time interval.
+import time
+time_end=time.time()+60
+while (time.time() < time_end):
+  print (time.asctime(time.localtime(time.time())))
+  time.sleep(5)
+
+#b) Write a program to find out how much CPU time is taken for the execution of above(32.a)  program.
+#Write a program to perform following operations on List.
+def listlen():
+  List1=[1,2,3,4,5]
+  List2=[7,4,3,2,6,5,2,1]
+  List3=[9,5,3,0,1]
+  #Find the length of each list and print it
+  print ("length of list1 is:%d" %len(List1))
+  print ("length of list1 is:%d" %len(List2))
+  print ("length of list1 is:%d" %len(List3))
+print (time.process_time())
+
+listlen()
+
+output::::
+import time
+time_end=time.time()+60
+while (time.time() < time_end):
+  print (time.asctime(time.localtime(time.time())))
+  time.sleep(5)
+
+#b) Write a program to find out how much CPU time is taken for the execution of above(32.a)  program.
+#Write a program to perform following operations on List.
+def listlen():
+  List1=[1,2,3,4,5]
+  List2=[7,4,3,2,6,5,2,1]
+  List3=[9,5,3,0,1]
+  #Find the length of each list and print it
+  print ("length of list1 is:%d" %len(List1))
+  print ("length of list1 is:%d" %len(List2))
+  print ("length of list1 is:%d" %len(List3))
+print (time.process_time())
+
+listlen()
+
+
+output:::::
+Thu Jan 11 21:01:39 2018
+Thu Jan 11 21:01:44 2018
+Thu Jan 11 21:01:49 2018
+Thu Jan 11 21:01:54 2018
+Thu Jan 11 21:01:59 2018
+Thu Jan 11 21:02:04 2018
+Thu Jan 11 21:02:09 2018
+Thu Jan 11 21:02:14 2018
+Thu Jan 11 21:02:19 2018
+Thu Jan 11 21:02:24 2018
+Thu Jan 11 21:02:29 2018
+Thu Jan 11 21:02:34 2018
+0.09375
+length of list1 is:5
+length of list1 is:8
+length of list1 is:5
+
+================================================
+
+
+
+
+
+
